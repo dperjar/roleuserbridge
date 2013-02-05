@@ -54,7 +54,7 @@ class User extends ZfcUser
         if($registerresult !== false) {
             $userRole = array(
                     'user_id' => $registerresult->getId(),
-                    'role_id' => 'user'
+                    'role_id' => 'student'
                     );
             $this->getRoleMapper()->insert($userRole);
         }
